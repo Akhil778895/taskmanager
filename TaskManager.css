@@ -1,0 +1,107 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top to avoid overlap */
+    min-height: 100vh; /* Use min-height instead of height */
+    padding-top: 60px; /* Add padding to avoid navbar overlap */
+  }
+  
+  .task-manager {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 20px; /* Add margin to ensure spacing */
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Task Input Area */
+  .task-input {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* Add gap between input and button */
+  }
+  
+  .task-input input {
+    padding: 10px;
+    width: 70%;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex-grow: 1; /* Allow input to grow */
+  }
+  
+  .task-input button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4e54c8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-shrink: 0; /* Prevent button from shrinking */
+  }
+  
+  .task-input button:hover {
+    background-color: #3c42b7;
+  }
+  
+  /* Task List */
+  .task-list {
+    margin-top: 20px;
+    color: black;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #eee; /* Add border for better separation */
+  }
+  
+  .task-item button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .task-item button:hover {
+    background-color: #c0392b;
+  }
+  
+  .task-item button + button {
+    background-color: #3498db;
+    margin-left: 10px;
+  }
+  
+  .task-item button + button:hover {
+    background-color: #2980b9;
+  }
